@@ -1,0 +1,37 @@
+// PAD1 - Praktikum 2
+// Aufgabe 6
+// 762199
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Zahl1 = 0;     //Intitialisierung von der ersten Zahl der ersten Teilaufgabe
+    int Zahl2 = 27;    //Intitialisierung von der zweiten Zahl der zweiten Teilaufgabe
+
+    while (Zahl1 <= 9)    //While Schleife zum Eingrenzen
+    {
+        Zahl1++;
+
+        if(Zahl1%2 != 0)    //Lässt nur alle ungeraden Zahlen zu
+        {
+            cout << Zahl1*11 << endl;    //Gibt die Schnapszahl aus
+        }
+
+        Zahl1++;
+
+    }
+
+    cout << endl;
+
+    while (Zahl2 < 41)    //While Schleife zum Eingrenzen
+    {
+        Zahl2++;
+
+        if(Zahl2%2 == 0)    //Lässt nur alle geraden Zahlen zu
+        {
+            cout << Zahl2 << endl;    //Gibt die Zahl an der n'ten Stelle aus
+        }
+    }
+    return 0;
